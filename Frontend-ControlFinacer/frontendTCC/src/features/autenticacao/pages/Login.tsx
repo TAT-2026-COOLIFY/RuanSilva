@@ -66,7 +66,7 @@ function Login() {
 
         try {
             const resposta = await fetch(
-                "http://localhost:8080/auth/login",
+                "http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/auth/login",
 
                 {
                     method: "POST",
@@ -122,7 +122,7 @@ function Login() {
 
         try {
             const resposta = await fetch(
-                "http://localhost:8080/auth/register",
+                "http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/auth/register",
 
                 {
                     method: "POST",
@@ -168,7 +168,7 @@ function Login() {
 
         try {
             await fetch(
-                "http://localhost:8080/auth/recuperar-senha",
+                "http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/auth/recuperar-senha",
 
                 {
                     method: "POST",
@@ -224,7 +224,7 @@ function Login() {
                         "
                             >
                                 <a
-                                    href="http://localhost:8080/oauth2/authorization/google"
+                                    href="http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/oauth2/authorization/google"
 
                                     className="
                                     botao-google
@@ -342,7 +342,7 @@ function Login() {
                         "
                             >
                                 <a
-                                    href="http://localhost:8080/login/oauth2/code/google"
+                                    href="http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/login/oauth2/code/google"
 
                                     className="
                                     botao-google
