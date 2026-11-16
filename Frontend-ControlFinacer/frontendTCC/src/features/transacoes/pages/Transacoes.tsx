@@ -181,7 +181,7 @@ function Transacoes() {
             setLoading(true);
 
             const response = await fetch(
-                `http://localhost:8080/transacoes/usuario/${USUARIO_ID}?mes=${mesSelecionado}&ano=${anoSelecionado}&page=${pagina}&size=${tamanhoPagina}`,
+                `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes/usuario/${USUARIO_ID}?mes=${mesSelecionado}&ano=${anoSelecionado}&page=${pagina}&size=${tamanhoPagina}`,
             );
 
             if (!response.ok) {
@@ -253,7 +253,7 @@ function Transacoes() {
                 parametros.append("valorMax", filtrosBusca.valorMax);
             }
 
-            const url = `http://localhost:8080/transacoes/filtrar?${parametros.toString()}`;
+            const url = `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes/filtrar?${parametros.toString()}`;
 
             console.log(url);
 
@@ -310,7 +310,7 @@ function Transacoes() {
     async function buscarCategoriasFiltro() {
         try {
             const response = await fetch(
-                `http://localhost:8080/categorias/usuario/${USUARIO_ID}/todas`,
+                `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias/usuario/${USUARIO_ID}/todas`,
             );
 
             if (!response.ok) {
@@ -338,7 +338,7 @@ function Transacoes() {
             setExcluindo(true);
 
             const response = await fetch(
-                `http://localhost:8080/transacoes/${transacaoParaExcluir.id}?usuarioId=${USUARIO_ID}`,
+                `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes/${transacaoParaExcluir.id}?usuarioId=${USUARIO_ID}`,
                 {
                     method: "DELETE",
                 },
@@ -739,7 +739,7 @@ function Transacoes() {
                             </div>
 
                             <iframe
-                                src={`http://localhost:8080/${comprovanteSelecionado}`}
+                                src={`http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/${comprovanteSelecionado}`}
                                 title="Visualização do comprovante"
                                 className="visualizador-comprovante"
                             />

@@ -65,7 +65,7 @@ function Categorias() {
             setLoading(true);
 
             const response = await fetch(
-                `http://localhost:8080/categorias/usuario/${USUARIO_ID}?tipo=${tipoSelecionado}&page=${pagina}&size=${tamanhoPagina}`,
+                `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias/usuario/${USUARIO_ID}?tipo=${tipoSelecionado}&page=${pagina}&size=${tamanhoPagina}`,
             );
 
             if (!response.ok) {
@@ -125,8 +125,8 @@ function Categorias() {
             const editando = categoriaEditando !== null;
 
             const url = editando
-                ? `http://localhost:8080/categorias/${categoriaEditando.id}?usuarioId=${USUARIO_ID}`
-                : "http://localhost:8080/categorias";
+                ? `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias/${categoriaEditando.id}?usuarioId=${USUARIO_ID}`
+                : "http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias";
 
             const corpo = editando
                 ? {
@@ -194,7 +194,7 @@ function Categorias() {
             setLoading(true);
 
             const response = await fetch(
-                `http://localhost:8080/categorias/${id}?usuarioId=${USUARIO_ID}`,
+                `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias/${id}?usuarioId=${USUARIO_ID}`,
                 {
                     method: "DELETE",
                 },

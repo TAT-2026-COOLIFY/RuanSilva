@@ -54,7 +54,7 @@ function RedefinirSenha() {
 
         try {
             const resposta = await fetch(
-                "http://localhost:8080/auth/redefinir-senha",
+                "http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/auth/redefinir-senha",
 
                 {
                     method: "POST",
