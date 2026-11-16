@@ -52,7 +52,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
         setUsuario(null);
 
-        fetch("https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/auth/logout", {
+        fetch("http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/auth/logout", {
             method: "POST",
             credentials: "include",
         }).catch(() => {});
@@ -65,7 +65,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             return;
         }
 
-        fetch("https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/auth/me", {
+        fetch("http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/auth/me", {
             credentials: "include",
         })
             .then((resposta) => (resposta.ok ? resposta.json() : null))

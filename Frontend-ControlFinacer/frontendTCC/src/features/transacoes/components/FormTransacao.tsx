@@ -192,7 +192,7 @@ function FormTransacao({ tipo, transacao, onClose, onSalvar }: FormTransacaoProp
             setErro("");
 
             const response = await fetch(
-                `https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias/usuario/${USUARIO_ID}/todas`,
+                `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias/usuario/${USUARIO_ID}/todas`,
             );
 
             if (!response.ok) {
@@ -297,8 +297,8 @@ function FormTransacao({ tipo, transacao, onClose, onSalvar }: FormTransacaoProp
             const editando = Boolean(transacao);
 
             const url = editando
-                ? `https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes/${transacao!.id}?usuarioId=${USUARIO_ID}`
-                : "https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes";
+                ? `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes/${transacao!.id}?usuarioId=${USUARIO_ID}`
+                : "http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes";
 
             const metodoHttp = editando ? "PUT" : "POST";
 
@@ -380,7 +380,7 @@ function FormTransacao({ tipo, transacao, onClose, onSalvar }: FormTransacaoProp
 
             formData.append("comprovante", arquivo);
 
-            const resposta = await fetch("https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/comprovantes/analisar-arquivo", {
+            const resposta = await fetch("http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/comprovantes/analisar-arquivo", {
                 method: "POST",
                 body: formData,
             });

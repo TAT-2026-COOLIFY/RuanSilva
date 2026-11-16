@@ -139,7 +139,7 @@ public class UsuarioService {
 
 
         String link =
-                "http://localhost:5173/redefinir-senha?token="
+                "http://i46fytu4yxihbzc7pejdsikc.187.33.201.107.sslip.io/redefinir-senha?token="
                         + token;
 
 

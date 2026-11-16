@@ -17,7 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 @RequestMapping("/comprovantes")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173")
+
 public class ComprovanteController {
 
     private final ComprovanteService service;

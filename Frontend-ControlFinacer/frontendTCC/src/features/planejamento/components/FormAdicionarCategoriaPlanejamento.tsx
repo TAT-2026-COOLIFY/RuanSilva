@@ -88,7 +88,7 @@ function FormAdicionarCategoriaPlanejamento({
             setErro("");
 
             const response = await fetch(
-                `https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias/usuario/${USUARIO_ID}/todas`,
+                `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias/usuario/${USUARIO_ID}/todas`,
             );
 
             if (!response.ok) {
