@@ -1,4 +1,4 @@
-export const BASE_URL = "http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io";
+export const BASE_URL = "https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io";
 
 async function extrairMensagemErro(resposta: Response, mensagemPadrao: string): Promise<string> {
     try {

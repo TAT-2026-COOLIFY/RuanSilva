@@ -64,7 +64,7 @@ function FormPlanejamentoCategorias({ finalizar, limite, categorias, setCategori
                 setErroCategorias("");
 
                 const response = await fetch(
-                    `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias/usuario/${USUARIO_ID}/todas`,
+                    `https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias/usuario/${USUARIO_ID}/todas`,
                 );
 
                 if (!response.ok) {

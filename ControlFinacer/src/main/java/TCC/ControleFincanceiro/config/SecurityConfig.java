@@ -59,7 +59,7 @@ public class SecurityConfig {
                                 )
                         )
                         .defaultSuccessUrl(
-                                "http://i46fytu4yxihbzc7pejdsikc.187.33.201.107.sslip.io/dashboard",
+                                "https://i46fytu4yxihbzc7pejdsikc.187.33.201.107.sslip.io/dashboard",
                                 true
                         )
                 );
@@ -77,7 +77,7 @@ public class SecurityConfig {
         configuration.setAllowedOrigins(
                 List.of(
                         "http://localhost:5173",
-                        "http://i46fytu4yxihbzc7pejdsikc.187.33.201.107.sslip.io"
+                        "https://i46fytu4yxihbzc7pejdsikc.187.33.201.107.sslip.io"
                 )
         );
 

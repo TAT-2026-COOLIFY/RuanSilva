@@ -181,7 +181,7 @@ function Transacoes() {
             setLoading(true);
 
             const response = await fetch(
-                `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes/usuario/${USUARIO_ID}?mes=${mesSelecionado}&ano=${anoSelecionado}&page=${pagina}&size=${tamanhoPagina}`,
+                `https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes/usuario/${USUARIO_ID}?mes=${mesSelecionado}&ano=${anoSelecionado}&page=${pagina}&size=${tamanhoPagina}`,
             );
 
             if (!response.ok) {
@@ -253,7 +253,7 @@ function Transacoes() {
                 parametros.append("valorMax", filtrosBusca.valorMax);
             }
 
-            const url = `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes/filtrar?${parametros.toString()}`;
+            const url = `https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes/filtrar?${parametros.toString()}`;
 
             console.log(url);
 
@@ -310,7 +310,7 @@ function Transacoes() {
     async function buscarCategoriasFiltro() {
         try {
             const response = await fetch(
-                `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias/usuario/${USUARIO_ID}/todas`,
+                `https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/categorias/usuario/${USUARIO_ID}/todas`,
             );
 
             if (!response.ok) {
@@ -338,7 +338,7 @@ function Transacoes() {
             setExcluindo(true);
 
             const response = await fetch(
-                `http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes/${transacaoParaExcluir.id}?usuarioId=${USUARIO_ID}`,
+                `https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/transacoes/${transacaoParaExcluir.id}?usuarioId=${USUARIO_ID}`,
                 {
                     method: "DELETE",
                 },
@@ -739,7 +739,7 @@ function Transacoes() {
                             </div>
 
                             <iframe
-                                src={`http://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/${comprovanteSelecionado}`}
+                                src={`https://yxoaaioug8zprahy3kheui5m.187.33.201.107.sslip.io/${comprovanteSelecionado}`}
                                 title="Visualização do comprovante"
                                 className="visualizador-comprovante"
                             />
